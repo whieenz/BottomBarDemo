@@ -46,10 +46,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
 class MyViewHolder extends RecyclerView.ViewHolder{
     TextView textView;
+    TextView delete;
 
     public MyViewHolder(View itemView) {
         super(itemView);
 
         textView = (TextView) itemView.findViewById(R.id.id_tv);
+        delete = (TextView) itemView.findViewById(R.id.id_delete);
     }
 }

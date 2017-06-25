@@ -12,14 +12,25 @@
         android:layout_width="match_parent"
         android:background="#F0F0F0"
         android:layout_height="72dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#54FF9F"
+            android:layout_toLeftOf="@+id/id_delete"
+            android:gravity="center"
+            android:text="修改"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:id="@+id/id_modify"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="match_parent"
+        android:background="#FF4040"
         android:layout_alignParentRight="true"
         android:gravity="center"
         android:text="删除"
         android:textSize="16sp"
-        android:textColor="#ee0000"
+        android:textColor="#ffffff"
         android:id="@+id/id_delete"/>
 
 
