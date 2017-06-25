@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.bottombardemo.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_recycleview"
+        android:background="#CCCCCC"
+        android:layout_above="@+id/main_bottom_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:id="@id/main_bottom_bar"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/first"
+            android:text="合计："
+            android:gravity="center"
+            android:textColor="#555"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/first"
+            android:text="3 条"
+            android:gravity="center"
+            android:textColor="#ee0000"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="提交"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#00442123"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="test"
+            android:clickable="true"
+            android:background="@drawable/bottom_center_bg"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:onClick="test"
+                android:background="@null"
+                android:src="@drawable/scan_pressed_bg1"
+                android:scaleType="centerInside" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫一扫"
+                android:clickable="true"
+                android:onClick="test"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
